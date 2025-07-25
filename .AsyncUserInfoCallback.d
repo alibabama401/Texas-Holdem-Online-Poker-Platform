@@ -1,0 +1,1 @@
+AsyncOperate/HallSvr/AsyncUserInfoCallback.o:
