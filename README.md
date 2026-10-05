@@ -1,222 +1,113 @@
-# 🃏 Texas Hold'em Poker Platform Source Code | 德州扑克平台源码 | 德州撲克平台源碼|德州源码|德州扑克源码|德州私人局|poker
+<div align="center">
 
-🔥 #1 Production-ready Texas Hold'em Poker Platform  
-🔥 Real-time Multiplayer | Club | Tournament | Private Room  
-🔥 Full Source Code + Admin Panel + Monetization System  
-🔥 Start your poker business in days  
+# 德州扑克源码与多人扑克平台资料
 
-👉 Build a complete online poker platform with full control & revenue system  
-👉 快速搭建盈利德州扑克平台，实现商业变现  
-👉 快速建立盈利德州撲克平台，支援商業運營  
+### Texas Hold’em Source Code and Online Poker Platform Reference
 
----
+C++ 异步回调 · 扑克协议资源 · 经典牌桌 · 俱乐部 · SNG · MTT
 
-## 🎯 What This Project Can Do For You
+[简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · [图文产品页](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/)
 
-✔ Launch your own poker platform  
-✔ Generate revenue (rake / tournaments / club system)  
-✔ Save 6–12 months development time  
-✔ Build a scalable online gaming business  
+</div>
 
-👉 Perfect for:
-- Startup founders  
-- Game developers  
-- Casino platform operators  
-- Overseas business projects  
+## 项目定位
 
----
+本仓库提供德州扑克产品界面、协议资源和部分 C++ 服务代码，用于多人扑克项目的架构评估、协议研究、产品设计与二次开发参考。
 
-## 🚀 System Overview | 项目介绍
+当前公开源码包括用户信息与账户异步回调、房间 AI 决策回调、机器人推送回调、机器人批次时间管理，以及登录、大厅、俱乐部、游戏记录、配置、聊天和德州牌局等协议资源。仓库还包含八张 1280×720 左右的产品截图，展示大厅、经典牌桌、行动区、MTT、SNG、配桌和商城界面。
 
-This is a **complete Texas Hold'em poker platform source code**, including:
+> **公开范围：** 这是源码片段与产品资料仓库，不是可直接编译部署的完整平台。C++ 文件引用了未公开的项目头文件和服务实现；Unity 仅有场景 `.meta`；未见完整构建配置、数据库脚本、服务入口或场景本体。
 
-- 🏠 Club System (俱乐部系统)
-- 🏆 Tournament System (MTT / SNG)
-- 🎮 Private Room System (私人房间)
-- ⚡ Real-time Multiplayer Engine
-- 💰 Payment & Rake System
-- 🛠 Admin Management Panel
+## 可核验功能
 
-适用于：
-- 棋牌游戏开发 / 棋牌平台
-- 出海项目 / 海外运营
-- 创业项目 / 商业变现
-- 二次开发 / 定制开发
+| 模块 | 仓库中的证据 |
+|---|---|
+| 用户资料与账户 | `AsyncUserInfoCallback.*` 包含基本资料、账户查询与变更回调 |
+| 批次机器人 | `BatchRobotTimer.*` 包含批次配置、进入、离开、过期和重入检查 |
+| 登录 | `login.proto.bytes` 含游客、设备、账号、第三方、快速和手机登录结构 |
+| 俱乐部 | `Club.proto.bytes` 含创建、加入、成员、审核、邀请和退出消息 |
+| SNG / MTT | `config.proto.bytes` 与 `CommonStruct.proto.bytes` 含赛事类型、房间、费用和奖励字段 |
+| 德州牌局 | `dz.proto.bytes` 含玩家、牌局、AI 行动和筹码相关消息结构 |
+| 大厅与道具 | `Hall.proto.bytes` 含道具、牌桌状态、通知和 AI 数据结构 |
+| Unity 场景线索 | `Login.unity.meta`、`Hall.unity.meta`、`GamePlay3D.unity.meta` 等元数据 |
 
----
+## 玩法与用户流程
 
-## ✨ Core Features | 核心功能
+```mermaid
+flowchart LR
+  A[登录或快速进入] --> B[浏览大厅与房间]
+  B --> C[经典牌桌 / SNG / MTT]
+  C --> D[配桌与玩家座位]
+  D --> E[弃牌 / 过牌 / 跟注 / 加注 / 全下]
+  E --> F[牌局状态、排名与记录]
+```
 
-- ✅ Full source code (Server + Client)
-- ✅ Real-time multiplayer (WebSocket)
-- ✅ High-performance C++ engine
-- ✅ Club / Tournament / Private Room system
-- ✅ Cross-platform (iOS / Android / Web)
-- ✅ Payment & Rake system
-- ✅ Admin panel + data dashboard
-- ✅ Scalable architecture (high concurrency)
+截图与协议资源能够支持以下产品场景的界面和消息研究：
 
----
-
-## 🧩 System Modules | 系统模块
-
-- 🎮 Game Engine
-- 📱 Mobile & Web Client
-- 🏠 Club System
-- 🏆 Tournament System
-- 💰 Payment System
-- 🛠 Admin Panel
-- 📊 Analytics System
-
----
-
-## ⚙️ Technical Highlights | 技术亮点
-
-- ⚡ C++ + Node.js architecture  
-- 📡 Real-time networking (WebSocket)  
-- 🔒 Anti-cheat system  
-- 🧩 High concurrency support  
-
----
-
-## 💰 Monetization Model | 盈利模式
-
-- ✔ Game rake (抽水)
-- ✔ Tournament fees (报名费)
-- ✔ Club revenue (俱乐部收益)
-- ✔ Agent / affiliate system (代理分佣)
-
-👉 Designed for real business profit  
-
----
-### 🎮 游戏模式 | Game Modes
-
-| 功能 | 说明 |
-|:---|:---|
-| 🏆 **SNG** | 单桌淘汰赛 |
-| ♠️ **经典德州** | 标准德州扑克 |
-| 🏛️ **俱乐部** | 创建/加入俱乐部 |
-| 👥 **私人房** | 朋友局、密码房 |
-| 🏅 **多桌锦标赛** | MTT多桌赛事 |
-| 🔄 **轮轮赛** | 轮转赛制 |
-| ⚔️ **联赛** | 赛季联赛系统 |
-| 🎯 **竞技场** | 竞技场模式 |
-
-### 🛒 经济系统 | Economy System
-
-| 功能 | 说明 |
-|:---|:---|
-| 🏪 **商城** | 道具/皮肤购买 |
-| 🎒 **背包** | 道具管理 |
-| 🔄 **兑换中心** | 积分/道具兑换 |
-| 💰 **财富系统** | 金币/钻石/积分 |
-### 🎁 活动系统 | Event System
-
-| 功能 | 说明 |
-|:---|:---|
-| 🎫 **刮刮乐** | 刮卡抽奖 |
-| 🎰 **彩票** | 彩票系统 |
-| 🎡 **大转盘** | 转盘抽奖 |
-| 🏕️ **新手营** | 新手专属活动 |
-| 🎲 **滚道具** | 道具滚动抽奖 |
-
-### 🌐 多语言支持 | Multi-Language Support
-
-| 语言 | 状态 |
-|:---|:---|
-| 简体中文 | ✅ |
-| 繁體中文 | ✅ |
-| English | ✅ |
-| ภาษาไทย (泰语) | ✅ |
-| Bahasa Melayu (马来语) | ✅ |
-
-## 📸 Screenshots | 项目展示
-
-![大厅-最新修改](https://github.com/user-attachments/assets/8694af17-0254-4e80-a38e-7067769f6d94)
-![1](https://github.com/user-attachments/assets/51e19b1e-7f33-432c-8d8f-c4c46f38cd08)
-![德州-AOF](https://github.com/user-attachments/assets/12355ca1-3fd4-40be-bf0a-156d4ebf3f78)
-![德州-经典](https://github.com/user-attachments/assets/ebe11137-5b05-4c1b-bb12-5b0069d1e78e)
-![2](https://github.com/user-attachments/assets/e023db74-cc1a-4467-954a-5964d057cdaa)
-![2](https://github.com/user-attachments/assets/164f3040-ae41-4df6-ae9f-2e14119f38a0)
-![1](https://github.com/user-attachments/assets/cb8731a4-abce-46e9-9366-f5be161ba8de)
-![01](https://github.com/user-attachments/assets/b97bef60-1dda-4f55-88b4-4ad30b79b26c)
-![12](https://github.com/user-attachments/assets/138d1a2c-b923-4c68-8780-04ab1618a6d1)
-![05](https://github.com/user-attachments/assets/3f584e23-ee9e-45b7-8b38-15ea8f0af8ac)
-![02](https://github.com/user-attachments/assets/b2c9a8ab-c15b-467e-9ec0-b8e642c18aae)
-
----
-
-## 🧠 Why Choose This Project | 对比优势
-
-| Feature | This Project | Build Yourself |
-|--------|------------|---------------|
-| Development Time | ✅ 7–15 days | ❌ 6–12 months |
-| Cost | ✅ Low | ❌ Very high |
-| Stability | ✅ Production-ready | ❌ Risky |
-| Monetization | ✅ Ready | ❌ Need design |
-| Deployment | ✅ Easy | ❌ Complex |
-
-👉 Save time, reduce risk, start earning faster  
-
----
-
-## 💼 What You Get
-
-- ✔ Full source code (Server + Client)
-- ✔ Admin panel
-- ✔ Database structure
-- ✔ Deployment guide
-- ✔ Technical support
-
----
-
-## 🚀 Commercial Support
-
-✔ Custom development  
-✔ Feature expansion  
-✔ Deployment assistance  
-✔ Long-term maintenance  
-
----
-
-## 📞 Contact | 联系方式
-
-🔥 Get full source code & live demo now  
-
-📧 Email: ttpoker40@gmail.com  
-💬 Telegram: @alibabama401  
-
-👉 Contact now to get pricing & demo  
-
----
-
-## 🔗 Related Projects
-
-- Poker Club System  
-- Poker Tournament System  
-- Private Room Poker  
-- Multiplayer Poker Engine  
-
-👉 Check my other repositories for more poker systems  
-
----
-
-## 🔍 Keywords (SEO)
-
-Texas Hold'em poker source code  
-online poker platform  
-multiplayer poker server  
-poker engine  
-casino game system  
-
-德州扑克源码 / 在线德州扑克 / 多人德州扑克 / 棋牌源码  
-
----
-
-## ⚠️ Disclaimer
-
-For educational purposes only.  
-仅供学习参考，请遵守法律法规。
+- 经典 Texas Hold’em 实时牌桌。
+- SNG 单桌锦标赛与 MTT 多桌锦标赛。
+- 俱乐部创建、加入、成员、申请和邀请消息流程。
+- 大厅房间、配桌、座位、商城和道具入口。
 
 
-![02](https://github.com/user-attachments/assets/b2c9a8ab-c15b-467e-9ec0-b8e642c18aae)
+## 产品截图
+
+| 在线扑克大厅 | 经典德州牌桌 |
+|---|---|
+| ![在线德州扑克大厅产品截图](docs/assets/screenshots/002dating.png) | ![经典 Texas Holdem 扑克牌桌截图](docs/assets/screenshots/004jingdian.jpg) |
+| **牌桌行动区** | **配桌与座位** |
+| ![德州扑克下注行动按钮截图](docs/assets/screenshots/001action.png) | ![多人扑克配桌和座位截图](docs/assets/screenshots/006paizuo.png) |
+| **MTT 多桌锦标赛** | **SNG 单桌锦标赛** |
+| ![Texas Holdem MTT 锦标赛截图](docs/assets/screenshots/005mtt.jpg) | ![Texas Holdem SNG 锦标赛截图](docs/assets/screenshots/008sng.jpg) |
+| **牌桌视觉界面** | **商城与道具** |
+| ![德州扑克牌桌荷官界面](docs/assets/screenshots/003heguang.png) | ![在线扑克平台商城截图](docs/assets/screenshots/007shop.png) |
+
+## 技术组成
+
+| 层级 | 当前公开内容 |
+|---|---|
+| C++ 回调层 | Tars 风格代理回调、日志、错误分支和部分业务状态处理 |
+| 定时与机器人数据 | `Timer`、`BatchRobotTimer`、`BatchRobotDataDef` |
+| 协议资源 | Protocol Buffers 风格的 `.proto.bytes` 文本资源 |
+| Unity 资源线索 | 场景 `.meta` 文件，不含可打开的 `.unity` 场景 |
+| 文档 | API 示例与部署参考；示例服务和路径需按实际工程验证 |
+| 展示站点 | 三语 GitHub Pages、结构化数据、robots 和 sitemap |
+
+## 仓库导航
+
+| 文件 | 用途 |
+|---|---|
+| [`AsyncUserInfoCallback.cpp`](AsyncUserInfoCallback.cpp) | 用户资料与账户回调 |
+| [`Club.proto.bytes`](Club.proto.bytes) | 俱乐部消息结构 |
+| [`config.proto.bytes`](config.proto.bytes) | 房间、SNG、MTT 等配置结构 |
+| [`dz.proto.bytes`](dz.proto.bytes) | 德州牌局消息结构 |
+| [`docs/api_documentation.md`](docs/api_documentation.md) | API 参考文档 |
+| [`docs/deployment_guide.md`](docs/deployment_guide.md) | 部署参考文档 |
+
+## 评估步骤
+
+1. 先通过截图确认产品形态和目标玩法。
+2. 对照上表阅读 C++ 回调和协议资源，不只依据营销描述。
+3. 列出缺失的头文件、服务实现、构建配置、数据库和 Unity 资源。
+4. 向维护者取得完整交付清单、依赖版本、测试记录和授权说明。
+5. 在隔离开发环境中完成编译、协议联调、安全审计和公平性测试。
+
+## 已知限制
+
+- `AsyncPushRobotCallback.cpp` 的主要成功处理逻辑目前被注释。
+- `BatchRobotTimer.cpp` 的主 `onTimer()` 循环目前被注释。
+- `.proto.bytes` 是消息资源，不等于服务端实现。
+- `.unity.meta` 是 Unity 元数据，不等于场景或完整客户端。
+- API 和部署文档包含示例地址、路径及服务名，需要结合实际工程核验。
+- `LICENSE` 为 MIT，但 `License.md` 和 `CITATION.cff` 存在不同授权描述，使用前应由维护者统一。
+
+## 搜索关键词
+
+德州扑克源码、德州撲克原始碼、Texas Holdem source code、online poker source code、multiplayer poker、poker server、poker club、poker protocol、C++ game server、SNG tournament、MTT tournament。
+
+## 联系与使用说明
+
+- Email: [ttpoker40@gmail.com](mailto:ttpoker40@gmail.com)
+- Telegram: [@alibabama401](https://t.me/alibabama401)
+
+本仓库用于软件评估、开发研究和合法娱乐项目。部署或运营前，应确认所在地关于网络游戏、年龄限制、数据保护、支付和许可的法律要求，并完成安全与公平性审查。

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/sitemap.xml
