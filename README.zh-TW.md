@@ -1,4 +1,4 @@
-# 德州撲克原始碼｜C++ 回呼、撲克協議、SNG 與 MTT 產品資料
+# 德州撲克原始碼｜德州撲克大廳|C++ 回呼、撲克協議、SNG 與 MTT 產品資料
 
 [主 README](README.md) · [简体中文](README.zh-CN.md) · [English](README.en.md) · [繁體中文產品頁](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/zh-tw/)
 
