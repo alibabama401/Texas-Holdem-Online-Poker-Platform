@@ -1,6 +1,6 @@
 <div align="center">
 
-# 德州扑克源码与多人扑克平台资料
+# 德州扑克源码与德州积分大厅源码
 
 ### Texas Hold’em Source Code and Online Poker Platform Reference
 
