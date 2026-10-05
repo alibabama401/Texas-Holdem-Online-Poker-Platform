@@ -11,7 +11,6 @@ This repository publishes selected C++ callbacks, batch robot timing logic, poke
 | Area | Public evidence |
 |---|---|
 | User and account data | `AsyncUserInfoCallback.*` profile, account and update callbacks |
-| AI decisions | `AsyncAICalcResultCallback.*` room decision result callback |
 | Robot dispatch | `AsyncPushRobotCallback.*` dispatch callback; most success handling is commented out |
 | Batch robots | `BatchRobotTimer.*` configuration, entry, leave, expiry and re-entry checks |
 | Login | Guest, device, account, third-party, quick and phone login message assets |
