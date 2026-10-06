@@ -1,4 +1,4 @@
-# Texas Holdem Source Code | Online Multiplayer Poker Platform
+# Texas Holdem Source Code（Texas Points Hall ） | Online Multiplayer Poker Platform
 
 [Main README](README.md) · [简体中文](README.zh-CN.md) · [台灣繁體](README.zh-TW.md) · [香港繁體](README.zh-HK.md) · [English product page](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/en/)
 
