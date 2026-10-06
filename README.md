@@ -1,6 +1,6 @@
 <div align="center">
 
-# 德州扑克源码与在线多人扑克平台｜Unity、C++、SNG 与 MTT
+# 德州扑克源码(德州积分大厅)与在线多人扑克平台｜Unity、C++、SNG 与 MTT
 
 ### Texas Hold’em Source Code and Online Poker Platform Reference
 
