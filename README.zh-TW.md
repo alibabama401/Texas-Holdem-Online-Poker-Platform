@@ -1,4 +1,4 @@
-# 德州撲克原始碼與線上多人撲克平台｜Unity、C++、SNG 與 MTT
+# 德州撲克原始碼（德州積分大廳）與線上多人撲克平台｜Unity、C++、SNG 與 MTT
 
 [主 README](README.md) · [简体中文](README.zh-CN.md) · [English](README.en.md) · [繁體中文產品頁](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/zh-tw/)
 
