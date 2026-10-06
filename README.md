@@ -1,12 +1,12 @@
 <div align="center">
 
-# 德州扑克源码与德州积分大厅源码
+# 德州扑克源码与在线多人扑克平台｜Unity、C++、SNG 与 MTT
 
 ### Texas Hold’em Source Code and Online Poker Platform Reference
 
 C++ 异步回调 · 扑克协议资源 · 经典牌桌 · 俱乐部 · SNG · MTT
 
-[简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · [图文产品页](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/)
+[简体中文](README.zh-CN.md) · [台灣繁體](README.zh-TW.md) · [香港繁體](README.zh-HK.md) · [English](README.en.md) · [图文产品页](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/)
 
 </div>
 

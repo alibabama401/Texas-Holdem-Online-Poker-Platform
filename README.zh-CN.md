@@ -1,6 +1,6 @@
-# 德州扑克源码｜C++ 回调、扑克协议、SNG 与 MTT 产品资料
+# 德州扑克源码与在线多人扑克平台｜Unity、C++、SNG 与 MTT
 
-[主 README](README.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · [简体中文产品页](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/zh-cn/)
+[主 README](README.md) · [台灣繁體](README.zh-TW.md) · [香港繁體](README.zh-HK.md) · [English](README.en.md) · [简体中文产品页](https://alibabama401.github.io/Texas-Holdem-Online-Poker-Platform/zh-cn/)
 
 本仓库公开德州扑克项目中的部分 C++ 异步回调、机器人批次时间逻辑、登录/大厅/俱乐部/赛事/牌局记录协议资源，以及经典牌桌、SNG、MTT、配桌和商城产品截图。
 
